@@ -6,3 +6,6 @@ $color:blue;
     @include autoprefixer-test;
     color:$color;
 }
+body{
+    background-color: red;
+}
