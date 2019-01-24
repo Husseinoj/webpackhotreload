@@ -1,8 +1,27 @@
 {
     "extends": "tslint:latest",
     "rules":{
-        "no-construct-vars":true,
+        "arrow-parens":[false,"ban-single-arg-parents"],
+        "max-line-length":[true,120],
+        "member-ordering":[true,{
+            "order":[
+                "private-static-field",
+                "private-instance-field",
+                "public-static-field",
+                "public-instance-field",
+                "constructor",
+                "public-instance-method",
+                "protected-instance-method",
+                "private-instance-method"
+            ]
+        }],
         "no-string-literal":false,
+        "no-implicit-dependencies":false,
+        "no-submodule-imports":false,
+        "no-var-requires":false,
+        "trailing-comma":false,
+       
+        
     },
     "rulesDirectory": []
 }

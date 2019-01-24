@@ -104,7 +104,7 @@ eval("console.log('gholi js uploaded')\n\n//# sourceURL=webpack:///./Source/ghol
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("console.log('hello wolrd');\n\n//# sourceURL=webpack:///./Source/index.js?");
+eval("console.log('hello');\n\n//# sourceURL=webpack:///./Source/index.js?");
 
 /***/ }),
 
@@ -130,14 +130,25 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./Sour
 
 /***/ }),
 
+/***/ "./Source/main.site.ts":
+/*!*****************************!*\
+  !*** ./Source/main.site.ts ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("var gholi = /** @class */ (function () {\n    function gholi() {\n    }\n    gholi.prototype.draw = function () {\n        console.log('hello world type script');\n    };\n    return gholi;\n}());\nvar ali = new gholi();\nali.draw();\n\n\n//# sourceURL=webpack:///./Source/main.site.ts?");
+
+/***/ }),
+
 /***/ 0:
-/*!*******************************************************************************************!*\
-  !*** multi ./Source/index.js ./Source/jafar.js ./Source/gholi.js ./Source/main.site.scss ***!
-  \*******************************************************************************************/
+/*!*****************************************************************************************************************!*\
+  !*** multi ./Source/main.site.ts ./Source/index.js ./Source/jafar.js ./Source/gholi.js ./Source/main.site.scss ***!
+  \*****************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./Source/index.js */\"./Source/index.js\");\n__webpack_require__(/*! ./Source/jafar.js */\"./Source/jafar.js\");\n__webpack_require__(/*! ./Source/gholi.js */\"./Source/gholi.js\");\nmodule.exports = __webpack_require__(/*! ./Source/main.site.scss */\"./Source/main.site.scss\");\n\n\n//# sourceURL=webpack:///multi_./Source/index.js_./Source/jafar.js_./Source/gholi.js_./Source/main.site.scss?");
+eval("__webpack_require__(/*! ./Source/main.site.ts */\"./Source/main.site.ts\");\n__webpack_require__(/*! ./Source/index.js */\"./Source/index.js\");\n__webpack_require__(/*! ./Source/jafar.js */\"./Source/jafar.js\");\n__webpack_require__(/*! ./Source/gholi.js */\"./Source/gholi.js\");\nmodule.exports = __webpack_require__(/*! ./Source/main.site.scss */\"./Source/main.site.scss\");\n\n\n//# sourceURL=webpack:///multi_./Source/main.site.ts_./Source/index.js_./Source/jafar.js_./Source/gholi.js_./Source/main.site.scss?");
 
 /***/ })
 

@@ -4,20 +4,28 @@ const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 
 const entry = {
-    main: ['./Source/index.js', './Source/jafar.js', './Source/gholi.js', './Source/main.site.scss']
+    main: ['./Source/main.site.ts', './Source/index.js', './Source/jafar.js', './Source/gholi.js', './Source/main.site.scss']
 }
 
 const _module = {
     rules: [{
-        test: /\.scss$/,
-        exclude: /node_modules/,
-        use: [
-            MiniCssExtractPlugin.loader,
-            'css-loader',
-            'postcss-loader',
-            'sass-loader'
-        ]
-    }]
+            test: /\.scss$/,
+            exclude: /node_modules/,
+            use: [
+                MiniCssExtractPlugin.loader,
+                'css-loader',
+                'postcss-loader',
+                'sass-loader'
+            ]
+        },
+        {
+            test: /\.ts$/,
+            exclude: /node_modules/,
+            use: [
+                'ts-loader'
+            ]
+        }
+    ]
 }
 const output = {
     filename: '[name].bundle.js',
