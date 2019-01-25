@@ -756,7 +756,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"main": 0
+/******/ 		"jafar": 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -853,32 +853,32 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push([0,"common"]);
+/******/ 	deferredModules.push([2,"common","gholi"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./Source/main.site.ts":
-/*!*****************************!*\
-  !*** ./Source/main.site.ts ***!
-  \*****************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("var gholi = /** @class */ (function () {\n    function gholi() {\n    }\n    gholi.prototype.draw = function () {\n        console.log('hello world type script!!');\n    };\n    return gholi;\n}());\nvar ali = new gholi();\nali.draw();\n\n\n//# sourceURL=webpack:///./Source/main.site.ts?");
-
-/***/ }),
-
-/***/ 0:
-/*!*****************************************************************!*\
-  !*** multi ./Source/main.site.ts webpack-hot-middleware/client ***!
-  \*****************************************************************/
+/***/ "./Source/jafar.js":
+/*!*************************!*\
+  !*** ./Source/jafar.js ***!
+  \*************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./Source/main.site.ts */\"./Source/main.site.ts\");\nmodule.exports = __webpack_require__(/*! webpack-hot-middleware/client */\"./node_modules/webpack-hot-middleware/client.js\");\n\n\n//# sourceURL=webpack:///multi_./Source/main.site.ts_webpack-hot-middleware/client?");
+eval("const all=__webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\nconsole.log(all.concat('jafar object','jafar gholi abadi'));\n\n//# sourceURL=webpack:///./Source/jafar.js?");
+
+/***/ }),
+
+/***/ 2:
+/*!*************************************************************!*\
+  !*** multi ./Source/jafar.js webpack-hot-middleware/client ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("__webpack_require__(/*! ./Source/jafar.js */\"./Source/jafar.js\");\nmodule.exports = __webpack_require__(/*! webpack-hot-middleware/client */\"./node_modules/webpack-hot-middleware/client.js\");\n\n\n//# sourceURL=webpack:///multi_./Source/jafar.js_webpack-hot-middleware/client?");
 
 /***/ })
 
